@@ -9,8 +9,8 @@
 puts "Welcome to the Palindrome Checker!"
 puts "Enter a word or phrase you'd like to test:"
 string = gets.chomp
-if string == ""
-  puts "You didn't enter anything."
+if string == "" || string.strip.empty?
+  puts "You didn't enter a word or phrase."
 else
   string.downcase!
   string_reverse = string.reverse
